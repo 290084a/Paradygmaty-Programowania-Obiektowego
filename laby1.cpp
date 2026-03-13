@@ -33,8 +33,9 @@ int main(){
 	bool Obecnosc;
 	int wybor;
 	cout<<"masz do wyboru 1:dodać osobe, 2: ustawić jej obecnosc, 3: wydrukować liste obecnosci, 4:zamknąć program"<<endl;
-	cin>>wybor;
+
     while(wybor !=4){
+		cin>>wybor;
 		switch(wybor){
 			case(1):
 				cout<<"podaj nazwisko"<<endl;
@@ -44,7 +45,7 @@ int main(){
 			case(2):
 				cout<<"podaj nazwisko"<<endl;
 				cin>>Nazwisko;
-				cout<<"podaj czy ma być obecna(true) czy nieobecna(false)"<<endl;
+				cout<<"podaj czy ma być obecna(1) czy nieobecna(0)"<<endl;
 				cin>>Obecnosc;
 				ustawObecnosc(tabNazwiska,tabObecnosc,Nazwisko,Obecnosc);
 				break;
